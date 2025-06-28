@@ -1,8 +1,10 @@
 const express = require("express")
 const path = require("path")
 const hbs = require("hbs")
+require("dotenv").config()
 
 const Router = require("./routes/index")
+require("./helpers/index")
 
 const app = express()
 app.set("view engine", "hbs")
