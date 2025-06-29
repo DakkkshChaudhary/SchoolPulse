@@ -23,6 +23,27 @@ function testimonialPage(req,res){
     res.render("testimonialPage",{title:"Testimonial"}) 
 }
 
+function contactUsPage(req,res){
+    res.render("contactUsPage",{title:"ContactUs"}) 
+}
+
+function enquiryPage(req,res){
+    res.render("enquiryPage",{title:"Enquiry for Admission"}) 
+}
+
+function galleryPage(req,res){
+    res.render("galleryPage",{title:"Gallery"}) 
+}
+
+function faqPage(req,res){
+    res.render("faqPage",{title:"FAQ"}) 
+}
+
+function eventsPage(req,res){
+    res.render("eventsPage",{title:"Events"}) 
+}
+
+
 module.exports = {
     homePage: homePage,
     aboutPage: aboutPage,
@@ -30,5 +51,9 @@ module.exports = {
     departmentPage: departmentPage,
     teamPage: teamPage,
     testimonialPage: testimonialPage,
-    
+    contactUsPage: contactUsPage,
+    enquiryPage: enquiryPage,
+    galleryPage: galleryPage,
+    faqPage: faqPage,
+    eventsPage: eventsPage,
 }
