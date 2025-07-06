@@ -1,0 +1,71 @@
+{{>header}}
+{{>navbar}}
+
+{{>breadcrumb}}
+
+<div class="container my-3">
+    <div class="row mx-3">
+        <div class="col-md-3 mb-3">
+            {{>sidebar}}
+        </div>
+        <div class="col-md-9 mb-3">
+            <h5 class="bg-primary text-center p-2 text-light">Events <a href="/admin/events"><i class="fa fa-arrow-left-long text-light float-end me-2"></i></a></h5>
+
+            <form action="/admin/events/store" method="post" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-md-12 mb-3">
+                        <label>Title</label>
+                        <input type="text" name="title" placeholder="Enter event title" class="form-control border-3 border-primary {{#if errorMessage.title}} border-danger {{/if}}">
+                        {{#if errorMessage.title }}
+                            <small class="text-danger">{{errorMessage.title}}</small>
+                        {{/if}}
+                    </div>
+
+                    <div class="col-md-12 mb-3">
+                        <label>Short Description</label>
+                        <textarea name="shortDescription" rows="3" placeholder="Enter short description" class="form-control border-3 border-primary {{#if errorMessage.shortDescription}} border-danger {{/if}}"></textarea>
+                        {{#if errorMessage.shortDescription }}
+                            <small class="text-danger">{{errorMessage.shortDescription}}</small>
+                        {{/if}}
+
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary w-100 ">
+                            <i class="fa fa-plus"></i> Create Event
+                        </button>
+                    </div>
+
+                </div>
+
+
+
+
+                {{!-- <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" class="form-control" id="title" name="title" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea class="form-control" id="description" name="description" rows="4" required></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label for="date" class="form-label">Date</label>
+                    <input type="date" class="form-control" id="date" name="date" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="image" class="form-label">Image</label>
+                    <input type="file" class="form-control" id="image" name="image">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Create Event</button> --}}
+
+            </form>
+
+        </div>
+    </div>
+
+</div>
+
+{{>footer}}
