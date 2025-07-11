@@ -1,0 +1,27 @@
+const multer  = require('multer')
+
+function createUploader (folderName){
+    const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, `public/uploads/${folderName}`)
+  },
+  filename: function (req, file, cb) {
+    // here cb is = callback function
+    // Date.now() + file.fieldname is used to make the file name unique
+    
+    cb(null, Date.now() + file.fieldname)
+  }
+})
+
+return multer({ storage: storage })
+}
+module.exports= {
+    departmentUploader: createUploader('department'),
+    eventUploader: createUploader('event'),
+    featureUploader: createUploader('feature'),
+    galleryUploader: createUploader('gallery'),
+    teamUploader: createUploader('team'),
+    testimonialUploader: createUploader('testimonial'),
+
+    
+}

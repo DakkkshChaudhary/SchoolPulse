@@ -8,7 +8,8 @@ require("./helpers/index")
 
 const app = express()
 app.set("view engine", "hbs")
-app.use(express.static(path.join(__dirname,"views/public")))
+app.use(express.static(path.join(__dirname,"views/public")))        // used for css, images in public folder
+app.use("/public", express.static("public"))        // used for server side images 
 hbs.registerPartials(path.join(__dirname,"views/partials"))
 
 app.use("",Router)
