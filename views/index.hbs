@@ -4,85 +4,91 @@
 
 {{!-- {{>breadcrumb}} --}}
 
-<main class="main">
-
-  <!-- Hero Section -->
-  <section id="hero" class="hero section light-background">
-
-    <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
-
-    <div class="container position-relative">
-
-      <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
-        <h2>WELCOME TO MEDILAB</h2>
-        <p>We are team of talented designers making websites with Bootstrap</p>
-      </div><!-- End Welcome -->
-
-      <div class="content row gy-4">
-        <div class="col-lg-4 d-flex align-items-stretch">
-          <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
-            <h3>Why Choose Medilab?</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Duis aute irure dolor in reprehenderit
-              Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
-            </p>
-            <div class="text-center">
-              <a href="#about" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
+ <!-- START SLIDER SECTION -->
+      <section class="slider-section">
+         <div class="home-slides owl-carousel owl-theme">
+            <div class="home-single-slide" data-background="assets/img/bg/slide1.jpg">
+               <div class="home-single-slide-overlay"></div>
+               <div class="home-single-slide-inner">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-lg-8">
+                           <div class="home-single-slide-dec">
+                              <h4>Small class sizes</h4>
+                              <h2>Mindful Curriculum</h2>
+                              <p>we provide three teachers per section<br>to take class.</p>
+                              <div class="home-single-slide-button mt-4">
+                                 <a href="#" class="slide-btn-one mb-lg-0 mb-md-0 mb-2">Learn More <i class="icofont-long-arrow-right"></i></a>
+                                 <a href="#" class="slide-btn-two">Contact Us</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div><!-- End Why Box -->
-
-        <div class="col-lg-8 d-flex align-items-stretch">
-          <div class="d-flex flex-column justify-content-center">
-            <div class="row gy-4">
-
-              <div class="col-xl-4 d-flex align-items-stretch">
-                <div class="icon-box" data-aos="zoom-out" data-aos-delay="300">
-                  <i class="bi bi-clipboard-data"></i>
-                  <h4>Corporis voluptates officia eiusmod</h4>
-                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                </div>
-              </div><!-- End Icon Box -->
-
-              <div class="col-xl-4 d-flex align-items-stretch">
-                <div class="icon-box" data-aos="zoom-out" data-aos-delay="400">
-                  <i class="bi bi-gem"></i>
-                  <h4>Ullamco laboris ladore pan</h4>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                </div>
-              </div><!-- End Icon Box -->
-
-              <div class="col-xl-4 d-flex align-items-stretch">
-                <div class="icon-box" data-aos="zoom-out" data-aos-delay="500">
-                  <i class="bi bi-inboxes"></i>
-                  <h4>Labore consequatur incidid dolore</h4>
-                  <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                </div>
-              </div><!-- End Icon Box -->
-
+            <!-- end single slider -->
+            <div class="home-single-slide" data-background="assets/img/bg/slide2.jpg">
+               <div class="home-single-slide-overlay"></div>
+               <div class="home-single-slide-inner">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-lg-8">
+                           <div class="home-single-slide-dec">
+                              <h4>Send message to parents</h4>
+                              <h2>Message Notification</h2>
+                              <p>notify parents by studied subjects and details<br>on daily basis.</p>
+                              <div class="home-single-slide-button mt-4">
+                                 <a href="#" class="slide-btn-two mb-lg-0 mb-md-0 mb-2">Our Services</a>
+                                 <a href="#" class="slide-btn-one">Read More <i class="icofont-long-arrow-right"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-      </div><!-- End  Content-->
-
-    </div>
-
-  </section><!-- /Hero Section -->
+            <!-- end single slider -->
+            <div class="home-single-slide" data-background="assets/img/bg/slide3.jpg">
+               <div class="home-single-slide-overlay"></div>
+               <div class="home-single-slide-inner">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-lg-8">
+                           <div class="home-single-slide-dec">
+                              <h4>New opportunity to learn</h4>
+                              <h2>Comfort Daycare</h2>
+                              <p>notify parents by studied subjects and details<br>on daily basis.</p>
+                              <div class="home-single-slide-button mt-4">
+                                 <a href="#" class="slide-btn-one mb-lg-0 mb-md-0 mb-2">Learn More <i class="icofont-long-arrow-right"></i></a>
+                                 <a href="#" class="slide-btn-two">Contact Us</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end single slider -->
+         </div>
+      </section>
+      <!-- END SLIDER SECTION  -->
 
   {{>events}}
   {{>about}}
   {{>facts}}
   {{>features}}
-  {{>enquiry}}
-  {{>department}}
   {{>team}}
-  {{>faq}}
-  {{>testimonial}}
+
+  {{>testimonialFaq}}
   {{>gallery}}
-  {{>contactus}}
+  {{>newsletter}}
 
+  {{!-- {{>enquiry}}
+  {{>department}} --}}
+  {{!-- {{>faq}} --}}
+  {{!-- {{>testimonial}} --}}
+  {{!-- {{>contactus}} --}}
 
-</main>
 
 {{> footer}}

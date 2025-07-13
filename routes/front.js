@@ -12,6 +12,7 @@ const {
     galleryPage,
     faqPage,
     eventsPage,
+    servicePage,
 
 } = require("../controllers/front")
 
@@ -26,5 +27,6 @@ frontRouter.get("/enquiry", enquiryPage)
 frontRouter.get("/gallery", galleryPage)
 frontRouter.get("/faq", faqPage)
 frontRouter.get("/events", eventsPage)
+frontRouter.get("/service", servicePage)
 
 module.exports = frontRouter

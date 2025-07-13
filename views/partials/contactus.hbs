@@ -1,83 +1,152 @@
- <!-- Contact Section -->
-  <section id="contact" class="contact section">
-
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-      <h2>Contact</h2>
-      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-    </div><!-- End Section Title -->
-
-    <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
-      <iframe style="border:0; width: 100%; height: 270px;"
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
-        frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div><!-- End Google Maps -->
-
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-      <div class="row gy-4">
-
-        <div class="col-lg-4">
-          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <i class="bi bi-geo-alt flex-shrink-0"></i>
-            <div>
-              <h3>Location</h3>
-              <p>A108 Adam Street, New York, NY 535022</p>
+<!-- START CONTACT PAGE SECTION -->
+      <section id="contcat" class="section-padding">
+         <div class="auto-container">
+            <div class="row">
+               <div class="col-lg-5 col-md-5 col-12 mb-lg-0 mb-md-0 mb-5">
+                 <div class="address-box-wrap bg-gray shadow-sm p-lg-5 p-md-3 p-3">
+                     <div class="address-box-sin mb-4">
+                        <div class="address-box-icon">
+                           <i class="icofont-location-pin"></i>
+                        </div>
+                        <div class="address-box-des">
+                           <h4>Office Address</h4>
+                           <p>Myers Street, Brooklyn <br> NY 10004, United States</p>
+                        </div>
+                     </div>
+                     <!-- end single address box -->
+                     <div class="address-box-sin mb-4">
+                        <div class="address-box-icon">
+                           <i class="icofont-envelope-open"></i>
+                        </div>
+                        <div class="address-box-des">
+                           <h4>Send Email</h4>
+                           <p>info@your_mail.com <br> info@your_website.com</p>
+                        </div>
+                     </div>
+                     <!-- end single address box -->
+                     <div class="address-box-sin mb-4">
+                        <div class="address-box-icon">
+                           <i class="icofont-fax"></i>
+                        </div>
+                        <div class="address-box-des">
+                           <h4>Phone & Fax</h4>
+                           <p>+123-456-0975 <br> +456-123-675</p>
+                        </div>
+                     </div>
+                     <!-- end single address box -->
+                     <div class="address-box-sin">
+                        <div class="address-box-icon">
+                           <i class="icofont-eye"></i>
+                        </div>
+                        <div class="address-box-des">
+                           <h4>Opening Time</h4>
+                           <p>Mon - Sat: 9 AM - 5 PM <br> Sun: Close</p>
+                        </div>
+                     </div>
+                     <!-- end single address box -->
+                 </div>
+               </div>
+               <!-- end col -->
+               <div class="col-lg-7 col-md-7 col-12 pl-lg-5 pl-md-3 pl-0">
+                  <div class="contact-heading mb-5">
+                     <h2>Join With Us</h2>
+                  </div>
+                  <div class="contact-form-wrap">
+                     <form id="main-form" class="contact-form form" name="enq" method="POST" action="form-process.php">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <span class="form-icon"><i class="icofont-user"></i></span>
+                                 <input type="text" class="form-control" id="name" placeholder="John" required>
+                                 <label for="name">First Name*</label>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <span class="form-icon"><i class="icofont-envelope"></i></span>
+                                 <input type="email" class="form-control" id="email" placeholder="example@xyz.com" required>
+                                 <label for="email">Email*</label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <span class="form-icon"><i class="icofont-ui-dial-phone"></i></span>
+                                 <input type="text" class="form-control" id="number" placeholder="xxx-xxx-xxxx" required>
+                                 <label for="number">Contact Number*</label>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <span class="form-icon"><i class="icofont-at"></i></span>
+                                 <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                                 <label for="subject">Subject*</label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="form-group form-message">
+                           <textarea class="form-control" id="message" rows="6" placeholder="Message"></textarea>
+                           <label for="message">Message</label>
+                        </div>
+                        <div class="text-center wow fadeInUp">
+                            <div class="actions">
+                                <input value="SUBMIT MESSAGE" name="submit" id="submitButton" class="btn con-btn" title="Click here to submit your message!" type="submit">
+                                <img src="assets/img/ajax-loader.gif" id="loader" style="display:none" alt="loading" width="16" height="16">
+                            </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+               <!-- end col -->
             </div>
-          </div><!-- End Info Item -->
+         </div>
+      </section>
+      <!-- END CONTACT PAGE SECTION -->
 
-          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <i class="bi bi-telephone flex-shrink-0"></i>
-            <div>
-              <h3>Call Us</h3>
-              <p>+1 5589 55488 55</p>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-            <i class="bi bi-envelope flex-shrink-0"></i>
-            <div>
-              <h3>Email Us</h3>
-              <p>info@example.com</p>
-            </div>
-          </div><!-- End Info Item -->
-
-        </div>
-
-        <div class="col-lg-8">
-          <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-            <div class="row gy-4">
-
-              <div class="col-md-6">
-                <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-              </div>
-
-              <div class="col-md-6 ">
-                <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-              </div>
-
-              <div class="col-md-12">
-                <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-              </div>
-
-              <div class="col-md-12">
-                <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-              </div>
-
-              <div class="col-md-12 text-center">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                <button type="submit">Send Message</button>
-              </div>
-
-            </div>
-          </form>
-        </div><!-- End Contact Form -->
-
+      <!-- START MAP SECTION -->
+      <div class="section-padding py-0">
+         <!-- start google map -->
+         <div class="gmap_canvas">
+            <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Brooklyn%20NY%2010004&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+         </div>
+         <!-- end google map -->
       </div>
+      <!-- END MAP SECTION -->
 
-    </div>
-
-  </section><!-- /Contact Section -->
+      <!-- START CLIENT LOGO SECTION -->
+      <div id="clients" class="client-padding bg-gray">
+          <div class="container">
+              <div class="row mb-lg-0 mb-md-0 mb-5">
+                  <div class="col">
+                      <div class="clients-slides owl-carousel owl-theme">
+                          <div class="single-client-item">
+                              <a href="#"><img class="img-fluid" alt="" src="assets/img/clients/1.png"></a>
+                          </div>
+                          <!-- end single item -->
+                          <div class="single-client-item">
+                              <a href="#"><img class="img-fluid" alt="" src="assets/img/clients/2.png"></a>
+                          </div>
+                          <!-- end single item -->
+                          <div class="single-client-item">
+                              <a href="#"><img class="img-fluid" alt="" src="assets/img/clients/3.png"></a>
+                          </div>
+                          <!-- end single item -->
+                          <div class="single-client-item">
+                              <a href="#"><img class="img-fluid" alt="" src="assets/img/clients/4.png"></a>
+                          </div>
+                          <!-- end single item -->
+                          <div class="single-client-item">
+                              <a href="#"><img class="img-fluid" alt="" src="assets/img/clients/5.png"></a>
+                          </div>
+                          <!-- end single item -->
+                          <div class="single-client-item">
+                              <a href="#"><img class="img-fluid" alt="" src="assets/img/clients/6.png"></a>
+                          </div>
+                          <!-- end single item -->
+                      </div>
+                  </div>
+              </div>
+          </div>  
+      </div>
+      <!-- START CLIENT LOGO SECTION -->
