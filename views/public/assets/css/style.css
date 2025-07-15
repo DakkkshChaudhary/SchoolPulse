@@ -420,7 +420,8 @@ fieldset {
 /* HELPER CLASSES */
 
 .section-padding {
-  padding: 100px 0;
+  /* padding: 100px 0; */
+  padding: 30px 0;
   position: relative;
   float: left;
   width: 100%;
@@ -652,7 +653,7 @@ fieldset {
   -webkit-border-radius: 3px 50% 50%;
   -moz-border-radius: 3px 50% 50%;
   border-radius: 3px 50% 50%;
-  webkit-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
@@ -868,7 +869,7 @@ a.header-search {
   color: #fff;
   padding: 11px 0 11px 20px;
   text-transform: capitalize;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
@@ -1965,7 +1966,7 @@ a.header-search {
 
 .tea-intro-img img {
   box-shadow: 15px 15px 0px 0 #0E70C7;
-  webkit-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
@@ -2564,7 +2565,7 @@ a.header-search {
 .blog-home-single:hover:after {
   opacity: 1;
   visibility: visible;
-  webkit-transform: scaleX(1);
+  -webkit-transform: scaleX(1);
   -moz-transform: scaleX(1);
   -ms-transform: scaleX(1);
   -o-transform: scaleX(1);
@@ -3113,7 +3114,7 @@ a.header-search {
 .page-banner {
   float: left;
   width: 100%;
-  height: 350px;
+  height: 280px;
   background-color: #0E70C7;
   background-size: cover;
   background-position: center;
@@ -3141,9 +3142,9 @@ a.header-search {
 
 .page-banner-title {
   color: #fff;
-  font-size: 70px;
+  font-size: 55px;
   font-weight: 800;
-  margin: 0 0 20px;
+  margin: 20px 0;
 }
 
 .page-banner-shape {
@@ -4334,7 +4335,7 @@ a.header-search {
   position: relative;
   -webkit-transition-property: color;
   transition-property: color;
-  webkit-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
@@ -4355,7 +4356,7 @@ a.header-search {
   transform-origin: 0 50%;
   -webkit-transition-property: transform;
   transition-property: transform;
-  webkit-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
@@ -4381,7 +4382,7 @@ a.header-search {
 .single-faq-box p,
 .single-faq-box h4,
 .single-faq-box p a {
-  webkit-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
@@ -5362,7 +5363,7 @@ a.header-search {
   text-align: center;
   display: block;
   border-radius: 50px;
-  webkit-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
