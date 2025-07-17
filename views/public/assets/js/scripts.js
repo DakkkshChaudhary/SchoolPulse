@@ -1,8 +1,4 @@
-/*
-Author       : Tech Trek.
-Template Name: Nekaton - Responsive School Template
-Version      : 1.0
-*/
+
 
 /*=============================================
 TABLE OF CONTENTS

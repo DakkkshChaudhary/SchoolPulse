@@ -9,7 +9,7 @@ function createUploader (folderName){
     // here cb is = callback function
     // Date.now() + file.fieldname is used to make the file name unique
     
-    cb(null, Date.now() + file.fieldname)
+    cb(null, Date.now() + file.originalname)
   }
 })
 
