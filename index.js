@@ -5,6 +5,7 @@ require("dotenv").config()
 
 const Router = require("./routes/index")
 require("./helpers/index")
+// require("./db_connect")
 require("./db_connect")
 
 const app = express()

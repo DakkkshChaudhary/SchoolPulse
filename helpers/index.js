@@ -51,3 +51,11 @@ hbs.registerHelper("siteAddress", () => {
 hbs.registerHelper("isActiveClass", (currentUrl, pageUrl) => {
   return currentUrl === pageUrl ? "active" : "" 
 });
+
+hbs.registerHelper("dateHelper", (date) => {
+  return new Date(date).toLocaleString()
+});
+
+hbs.registerHelper("isActive", (active) => {
+  return active ? "Yes" : "No"
+});

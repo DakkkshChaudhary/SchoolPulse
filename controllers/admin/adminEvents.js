@@ -1,8 +1,14 @@
 const Event = require("../../models/Event");
-function homePage(req, res) {
-  res.render("admin/events/index", {
-    title: "Admin - Events",
-  });
+async function homePage(req, res) {
+  try {
+    let data = await Event.find().sort({_id: -1})
+    res.render("admin/events/index",{
+      title: "Admin - Events",
+      data: data
+    })
+  } catch (error) {
+    
+  }
 }
 
 function createPage(req, res) {
@@ -20,6 +26,7 @@ async function storePage(req, res) {
     if (req.file) {
       data.pic = req.file.path;
     }
+    data.createBy = "Admin"; // Assuming the creator is always "Admin"
     await data.save();
     res.redirect("/admin/event");
   } catch (error) {
