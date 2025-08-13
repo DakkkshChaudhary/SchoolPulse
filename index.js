@@ -31,6 +31,8 @@ require("dotenv").config()
 const app = express()
 var sessionObj = {
     secret: process.env.SESSION_SECRET_KEY,
+    resave: true,            // don't save session if unmodified
+    saveUninitialized: false, // don't create session until something stored
     cookie: {}
 }
 if (app.get('env') === 'production') {
