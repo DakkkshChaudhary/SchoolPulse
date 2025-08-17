@@ -10,7 +10,7 @@
                 {{>sidebar}}
             </div>
             <div class="col-md-9 mb-3">
-                <h5 class="bg-primary text-center p-2 text-light">Department <a href="/admin/department"><i
+                <h5 class="bg-primary text-center p-2 text-light">Events <a href="/admin/event"><i
                             class="bi bi-arrow-left text-light float-end"></i></a></h5>
                 <div class="table-responsive">
                     <table class="table table-bordered">
@@ -24,14 +24,6 @@
                                 <td>{{data.title}}</td>
                             </tr>
                             <tr>
-                                <th>Pic</th>
-                                <td>
-                                    <a href="/{{data.pic}}">
-                                        <img src="/{{data.pic}}" height="200px" width="500px" alt="">
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
                                 <th>Short Description</th>
                                 <td>{{data.shortDescription}}</td>
                             </tr>
@@ -40,12 +32,20 @@
                                 <td>{{{data.longDescription}}}</td>
                             </tr>
                             <tr>
-                                <th>Icon</th>
-                                <td>{{{data.icon}}}</td>
+                                <th>Pic</th>
+                                <td>
+                                    <a href="/{{data.pic}}">
+                                        <img src="/{{data.pic}}" height="200px" width="500px" alt="">
+                                    </a>
+                                </td>
                             </tr>
                             <tr>
                                 <th>Active</th>
                                 <td>{{isActive data.active}}</td>
+                            </tr>
+                            <tr>
+                                <th>Event Date</th>
+                                <td>{{dateHelper data.date}}</td>
                             </tr>
                             <tr>
                                 <th>Created By/Created At</th>
@@ -63,8 +63,7 @@
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    <a href="/admin/department/edit/{{data._id}}" class="btn btn-primary w-100">Update
-                                        Record</a>
+                                    <a href="/admin/event/edit/{{data._id}}" class="btn btn-primary w-100">Update Record</a>
                                 </td>
                             </tr>
                         </tbody>

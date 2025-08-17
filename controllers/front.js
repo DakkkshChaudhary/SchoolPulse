@@ -41,7 +41,7 @@
 // }
 
 // function eventsPage(req,res){
-//     res.render("eventsPage",{title:"Events", currentUrl: "/events"}) 
+//     res.render("eventsPage",{title:"Events", currentUrl: "/event"}) 
 // }
 
 // function servicePage(req,res){

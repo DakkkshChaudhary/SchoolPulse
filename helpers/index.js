@@ -84,49 +84,94 @@ hbs.registerHelper("siteNameLogo", () => {
     return name
 })
 
+// hbs.registerHelper("siteEmail", () => {
+//     return setting.email && setting.email !== "" ? setting.email : process.env.SITE_EMAIL
+// })
+
+// hbs.registerHelper("sitePhone", () => {
+//     return setting.phone && setting.phone !== "" ? setting.phone : process.env.SITE_PHONE
+// })
+
+// hbs.registerHelper("siteWhatsApp", () => {
+//     return setting.whatsapp && setting.whatsapp !== "" ? setting.whatsapp : process.env.SITE_WHATSAPP
+// })
+
+// hbs.registerHelper("siteAddress", () => {
+//     return setting.address && setting.address !== "" ? setting.address : process.env.SITE_ADDRESS
+// })
+
+// hbs.registerHelper("siteMap1", () => {
+//     return setting.map1 && setting.map1 !== "" ? setting.map1 : process.env.SITE_GOOGLE_MAP1
+// })
+
+// hbs.registerHelper("siteMap2", () => {
+//     return setting.map2 && setting.map2 !== "" ? setting.map2 : process.env.SITE_GOOGLE_MAP2
+// })
+
+// hbs.registerHelper("siteFacebook", () => {
+//     return setting.facebook && setting.facebook !== "" ? setting.facebook : process.env.SITE_FACEBOOK
+// })
+
+// hbs.registerHelper("siteTwitter", () => {
+//     return setting.twitter && setting.twitter !== "" ? setting.twitter : process.env.SITE_TWITTER
+// })
+
+// hbs.registerHelper("siteYoutube", () => {
+//     return setting.youtube && setting.youtube !== "" ? setting.youtube : process.env.SITE_YOUTUBE
+// })
+
+// hbs.registerHelper("siteInstagram", () => {
+//     return setting.instagram && setting.instagram !== "" ? setting.instagram : process.env.SITE_INSTAGRAM
+// })
+
+// hbs.registerHelper("siteLinkedin", () => {
+//     return setting.linkedin && setting.linkedin !== "" ? setting.linkedin : process.env.SITE_LINKEDIN
+// })
+
+
 hbs.registerHelper("siteEmail", () => {
-    return setting.email && setting.email !== "" ? setting.email : process.env.SITE_EMAIL
-})
+    return setting && setting.email && setting.email !== "" ? setting.email : process.env.SITE_EMAIL || "";
+});
 
 hbs.registerHelper("sitePhone", () => {
-    return setting.phone && setting.phone !== "" ? setting.phone : process.env.SITE_PHONE
-})
+    return setting && setting.phone && setting.phone !== "" ? setting.phone : process.env.SITE_PHONE || "";
+});
 
 hbs.registerHelper("siteWhatsApp", () => {
-    return setting.whatsapp && setting.whatsapp !== "" ? setting.whatsapp : process.env.SITE_WHATSAPP
-})
+    return setting && setting.whatsapp && setting.whatsapp !== "" ? setting.whatsapp : process.env.SITE_WHATSAPP || "";
+});
 
 hbs.registerHelper("siteAddress", () => {
-    return setting.address && setting.address !== "" ? setting.address : process.env.SITE_ADDRESS
-})
+    return setting && setting.address && setting.address !== "" ? setting.address : process.env.SITE_ADDRESS || "";
+});
 
 hbs.registerHelper("siteMap1", () => {
-    return setting.map1 && setting.map1 !== "" ? setting.map1 : process.env.SITE_GOOGLE_MAP1
-})
+    return setting && setting.map1 && setting.map1 !== "" ? setting.map1 : process.env.SITE_GOOGLE_MAP1 || "";
+});
 
 hbs.registerHelper("siteMap2", () => {
-    return setting.map2 && setting.map2 !== "" ? setting.map2 : process.env.SITE_GOOGLE_MAP2
-})
+    return setting && setting.map2 && setting.map2 !== "" ? setting.map2 : process.env.SITE_GOOGLE_MAP2 || "";
+});
 
 hbs.registerHelper("siteFacebook", () => {
-    return setting.facebook && setting.facebook !== "" ? setting.facebook : process.env.SITE_FACEBOOK
-})
+    return setting && setting.facebook && setting.facebook !== "" ? setting.facebook : process.env.SITE_FACEBOOK || "";
+});
 
 hbs.registerHelper("siteTwitter", () => {
-    return setting.twitter && setting.twitter !== "" ? setting.twitter : process.env.SITE_TWITTER
-})
+    return setting && setting.twitter && setting.twitter !== "" ? setting.twitter : process.env.SITE_TWITTER || "";
+});
 
 hbs.registerHelper("siteYoutube", () => {
-    return setting.youtube && setting.youtube !== "" ? setting.youtube : process.env.SITE_YOUTUBE
-})
+    return setting && setting.youtube && setting.youtube !== "" ? setting.youtube : process.env.SITE_YOUTUBE || "";
+});
 
 hbs.registerHelper("siteInstagram", () => {
-    return setting.instagram && setting.instagram !== "" ? setting.instagram : process.env.SITE_INSTAGRAM
-})
+    return setting && setting.instagram && setting.instagram !== "" ? setting.instagram : process.env.SITE_INSTAGRAM || "";
+});
 
 hbs.registerHelper("siteLinkedin", () => {
-    return setting.linkedin && setting.linkedin !== "" ? setting.linkedin : process.env.SITE_LINKEDIN
-})
+    return setting && setting.linkedin && setting.linkedin !== "" ? setting.linkedin : process.env.SITE_LINKEDIN || "";
+});
 
 hbs.registerHelper("isActiveClass", (currentUrl, pageUrl) => {
     return currentUrl === pageUrl ? "active" : ""
